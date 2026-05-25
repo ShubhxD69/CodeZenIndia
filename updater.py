@@ -69,7 +69,7 @@ class UpdateCheckThread(QThread):
             import requests  # noqa: PLC0415
             url = UPDATE_URL
             if self._channel == "beta":
-                url = url.replace("update.json", "update-beta.json")
+                url = url.replace("version.json", "version-beta.json")
             resp = requests.get(url, timeout=8)
             resp.raise_for_status()
             data = resp.json()
@@ -78,11 +78,9 @@ class UpdateCheckThread(QThread):
                 self.update_available.emit(data)
             else:
                 self.up_to_date.emit()
-        except ImportError:
-            self.check_failed.emit(
-                "requests library not installed.\n"
-                "Run:  pip install requests"
-            )
+        except ImportError as exc:
+            print("IMPORT ERROR:", repr(exc))
+            self.check_failed.emit(str(exc))
         except Exception as exc:
             self.check_failed.emit(str(exc))
 

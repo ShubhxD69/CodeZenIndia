@@ -65,7 +65,7 @@ a = Analysis(
     hooksconfig={},
     runtime_hooks=[],
     excludes=[
-        'tkinter', 'unittest', 'email', 'html',
+        'tkinter', 'unittest', 'html',
         'xmlrpc', 'pydoc', 'doctest', 'test',
     ],
     win_no_prefer_redirects=False,

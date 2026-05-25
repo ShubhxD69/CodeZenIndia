@@ -85,10 +85,14 @@ def find_interpreters() -> list[PythonInfo]:
 
     def _add(path: str, kind: str = "system"):
         real = os.path.realpath(path)
+        if "WindowsApps" in real:
+            return
         if real in seen or not os.path.isfile(path):
             return
         seen.add(real)
         ver = _probe_version(path)
+        if "was not found" in ver or "Microsoft Store" in ver:
+            return
         if ver:
             results.append(PythonInfo(path=path, version=ver, kind=kind))
 

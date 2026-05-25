@@ -21,6 +21,7 @@ from explorer import FileExplorer
 from terminal import Terminal
 from theme    import BG_PANEL, FG_MUTED, FG_WHITE, BORDER
 from settings import Settings, SettingsDialog
+from updater import check_for_updates
 
 
 def _resource(relative: str) -> str:
@@ -564,7 +565,6 @@ class MainWindow(QMainWindow):
 
     def _check_updates_manual(self):
         try:
-            from updater import check_for_updates
             self._update_thread = check_for_updates(self, silent=False)
         except Exception as exc:
             QMessageBox.warning(self, "Update Check", str(exc))
