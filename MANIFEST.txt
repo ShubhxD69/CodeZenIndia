@@ -1,0 +1,7 @@
+# CodeZen India — Production Package Manifest
+# Generated: 2026-05-25 15:33
+# Version:   1.0.0
+#
+# Run from source:      pip install -r requirements.txt && python main.py
+# Build EXE:            python create_icon.py && pyinstaller CodeZenIndia.spec
+# Build installer:      iscc installer.iss  (after building EXE)

@@ -1,0 +1,5 @@
+{
+  "version": "1.0.0",
+  "download_url": "https://github.com/ShubhMishra/CodeZenIndia/releases/download/v1.0.0/CodeZenIndiaSetup.exe",
+  "changelog": "- Initial release\n- Python IDE with syntax highlighting\n- Integrated terminal with ANSI colours\n- File explorer with drag-and-drop\n- Settings system\n- Python interpreter manager\n- Auto-update system"
+}
