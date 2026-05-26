@@ -1,0 +1,9 @@
+# CodeZen India — Python dependencies
+#
+# Runtime (required to run from source)
+PyQt6>=6.6.0
+requests>=2.31.0
+
+# Build-time only (required to produce the standalone EXE)
+# Not needed if you are running from source.
+pyinstaller>=6.3.0

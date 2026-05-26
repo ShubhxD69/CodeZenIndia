@@ -1,0 +1,5 @@
+{
+  "version": "1.1.0",
+  "download_url": "https://github.com/ShubhxD69/CodeZenIndia/releases/download/v1.1.0/CodeZenIndiaSetup.exe",
+  "changelog": "- Added smart automatic Python interpreter selection\n- Added official Python installer manager\n- Added automatic interpreter restoration across launches\n- Added dynamic Python version fetching from python.org\n- Added install/update buttons for Python versions\n- Added smart interpreter badges (ACTIVE, LATEST, RECOMMENDED, INSTALLED)\n- Improved beginner onboarding\n- Fixed Shift key triggering autocomplete popup\n- Fixed Shift+Enter editor behavior\n- Improved autocomplete stability\n- Improved low-end-PC compatibility"
+}

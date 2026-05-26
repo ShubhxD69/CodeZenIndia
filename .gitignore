@@ -1,0 +1,10 @@
+dist/
+build/
+*.zip
+*.exe
+__pycache__/
+*.zip
+*.zip
+*.exe
+dist/
+build/
